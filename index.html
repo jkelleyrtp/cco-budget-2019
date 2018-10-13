@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CCO 2018-2019 Budget Tracking</title>
+
+    <!-- Load jQuery and Sheetrock from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png">
+
+    <script> const mySpreadsheet = "https://docs.google.com/spreadsheets/d/1KDoIl4W7p3ulEOL4Gf5Z2DBT6IS5SxKE0yW8sIX2JrM/edit#gid=1869436457"; </script>
+
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="title">
+        <center> <h1> CCO 2018-2019 Budget Tracking <h1> </center>
+      </div>
+
+
+      <div class="q1">
+        <div id="chart"><!-- Plotly chart will be drawn inside this DIV --></div>
+        <script src = "widgets/spending-barchart.js"> </script>
+
+      </div>
+      <div class="q2">
+        <table id="switch-hitters2" class="table table-condensed table-striped"></table>
+
+      </div>
+      <div class="q3">
+        <center> <h2> q3 </h2> </center>
+      </div>
+      <div class="q4">
+        <center> <h2> q4 </h2> </center>
+      </div>
+    </div>
+  </body>
+  <script src='js/backend.js'> </script>
+
+</html>
+
+
+<script>
+//https://docs.google.com/spreadsheets/d/e/2PACX-1vQpoUAQof587s3OQ0DIkquIo-FnBpiYWR_BMhcULRpjJzEw_3tqAMHgwXbkV2JO_cAvoILIYBQtfXNo/pubhtml
+//https://spreadsheets.google.com/feeds/list/1KDoIl4W7p3ulEOL4Gf5Z2DBT6IS5SxKE0yW8sIX2JrM/od6/public/values?alt=json
+//https://spreadsheets.google.com/feeds/list/2PACX-1vQpoUAQof587s3OQ0DIkquIo-FnBpiYWR_BMhcULRpjJzEw_3tqAMHgwXbkV2JO_cAvoILIYBQtfXNo/od6/public/values?alt=json-in-script&callback=
+//https://spreadsheets.google.com/feeds/list/2PACX-1vQpoUAQof587s3OQ0DIkquIo-FnBpiYWR_BMhcULRpjJzEw_3tqAMHgwXbkV2JO_cAvoILIYBQtfXNo/od6/public/values?alt=json
+//http://chriszarate.github.io/sheetrock/
+</script>

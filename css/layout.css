@@ -1,0 +1,18 @@
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 2fr 2fr;
+  grid-gap: 1px 1px;
+  grid-template-areas: ". . . ." "q1 q1 q2 q2" "q3 q3 q4 q4";
+}
+
+.title { grid-area: 1 / 1 / 2 / 6; }
+
+.q1 { grid-area: q1; }
+
+.q2 { grid-area: q2; }
+
+.q3 { grid-area: q3; }
+
+.q4 { grid-area: q4; }
