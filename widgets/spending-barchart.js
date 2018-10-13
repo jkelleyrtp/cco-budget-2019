@@ -27,5 +27,5 @@ function display_spending(data_object){
     }
   });
 
-  Plotly.newPlot('chart', data);
+  Plotly.newPlot('barchart', data);
 }
